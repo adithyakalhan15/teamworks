@@ -31,18 +31,24 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className={styles.search_section}>
+          <h2>Search Your Favourite Topics Here.</h2>
+          <input type='text' placeholder='Search'></input>
+        </section>
         <section style={styles.section2}>
           <div className='container'>
             <div className={styles.section2_all}>
               <h2>Our Resource Categories</h2>
               <p>You can refer different documents, books, audio, videos related to the following areas.</p>
               <div className={styles.section2_btnarea}>
-                <button>Electrical Engineering</button>
-                <button>Electronic Engineering</button>
-                <button>Mechanical Engineering</button>
-                <button>Civil Engineering</button>
-                <button>Computer Engineering</button>
-                <button>Automobile Engineering</button>
+                <div className='row'>
+                  <button className='col-3'>Electrical Engineering</button>
+                  <button className='col-3'>Electronic Engineering</button>
+                  <button className='col-3'>Mechanical Engineering</button>
+                  <button className='col-2'>Civil Engineering</button>
+                  <button className='col-3'>Computer Engineering</button>
+                  <button className='col-3'>Automobile Engineering</button>
+                </div>
               </div>
             </div>
           </div>
