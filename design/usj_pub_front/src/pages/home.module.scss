@@ -1,0 +1,51 @@
+$nav-color-1:#0c77c9d4;
+$right-side-color:#0e62a30b;
+
+.section1_side{
+    text-align: center; height: 100%;
+    padding-top: 18%;
+    background-color: $right-side-color;
+}
+.section1_side h3{
+    font-size: 35px;
+}
+.section1_side p{
+    width: 80%; font-size: 18px;
+    margin-left: 10%;
+}
+
+.section1_side button{
+    width: 40%;
+    font-size: 18px; font-weight: 500;
+    border: none;
+    padding: 12px 10px;
+    background-color: $nav-color-1;
+    color: white;
+}
+
+.section2_all{
+    display: block;
+}
+
+.section2_all h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.section2_all p{
+    text-align: center; padding-top: 10px;
+    font-size: 18px;
+}
+
+// .section2_btnarea{
+
+// }
+
+.section2_btnarea button{
+    font-size: 18px; 
+    border: 2px solid $nav-color-1;
+    margin-left: 2%; margin-bottom: 2%;
+    padding: 10px 35px; border-radius: 40px;
+    background-color: white;
+    text-align: center;
+}
