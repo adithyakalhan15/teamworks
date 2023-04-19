@@ -1,7 +1,7 @@
 # Guid to Deploying the microservice
 This guid will tell how the microservices should be deployed manually with apache server. For each server the desired url and the config file code will be given bellow.
 
-## Deploying the microservice "Users"
+## Users - Deploying the microservice
 The microservice users is a laravel project and it will be deployed in following url.
 
     http://localhost/api/user
