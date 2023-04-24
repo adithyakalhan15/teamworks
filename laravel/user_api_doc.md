@@ -7,6 +7,7 @@ the api key sould save in a cookie for requesting
 
 ### auth login
 this api will be used for login
+
 `
 POST: /api/users/auth/login
 `
@@ -33,6 +34,7 @@ store the api key in a cookie and use for all api calls.
 
 ### auth invalidate api key
 this will remove the api key from all registered microservices cache and from the database.
+
 `
 POST /api/users/auth/invalidate-api-key
 `
@@ -94,7 +96,8 @@ the api will respond with following parameters.
 ### reset the password
 
 once the reset token was genarated, the url with the token will sent to the user's email address.
-after that, use this api endpoint for resetting the password. 
+after that, use this api endpoint for resetting the password.
+
 `
 POST /api/users/pwreset/reset-password
 `
