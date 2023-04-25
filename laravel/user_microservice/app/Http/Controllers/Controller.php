@@ -19,8 +19,9 @@ class Controller extends BaseController
 
         if ($validator->fails()){
             //get error messages
-            $error = $validator->errors()->all();
-            print_r($error);
+            $error = $validator->errors()->all()[0];
+
+            echo "{\"error\":true, \"message\":\"$error\", \"errorcode\":1000}";
             return false;
         }
         return true;

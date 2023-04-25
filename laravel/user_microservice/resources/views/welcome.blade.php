@@ -136,5 +136,25 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            const test = ()=>{
+                let fd = new FormData();
+                fd.append("firstname", "namindu");
+                fd.append("lastname", "ranathunga");
+                fd.append("email", "namindu@live.com");
+                fd.append("password", "Ayesha1234");
+                fd.append("password_confirmation", "Ayesha1234");
+                fd.append("apikey", "53r465gdfg5y7ythgfhjyuiu7ujgyhkuoi8i");
+                var x = new XMLHttpRequest();
+                x.onreadystatechange = ()=>{
+                    if (x.readyState == 4){
+                        console.log(x.responseText);
+                    }
+                }
+                x.open("POST", "/signup/create-admin-account");
+                x.send(fd);
+            }
+        </script>
     </body>
 </html>

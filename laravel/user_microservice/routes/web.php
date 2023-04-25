@@ -25,7 +25,7 @@ Route::get('/signup', function () {
 
 //Signup
 Route::prefix("signup")->controller(SignUpController::class)->group(function (){
-    Route::get("create-user-account", "CreateUserAccount");
+    Route::post("create-user-account", "CreateUserAccount");
     Route::post("create-researcher-account", "CreateResearcherAccount");
     Route::post("create-admin-account", "CreateAdminAccount");
 
