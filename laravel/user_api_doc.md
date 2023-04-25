@@ -96,6 +96,7 @@ the api will take email addreas as the parameter.
 | :------------ | :------------ | :------------ |
 |email|email address of the user| yes|
 |url| string - for callback with the token| no|
+
 the api will respond with following parameters.
 
 |parameter | value | notes |
