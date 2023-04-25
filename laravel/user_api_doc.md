@@ -1,9 +1,15 @@
 # User API Documentation
 This api documentation is about user microservice. For keep it simple, api endpoints are devided into few groups.
+
+<br>
+<br>
+
 ## auth
 this api will used to create user api key from login info, 
 invalidate api key (logout), validate api key (validation for other microservices)
 the api key sould save in a cookie for requesting
+
+<br>
 
 ### auth login
 this api will be used for login
@@ -32,7 +38,7 @@ the api will respond with following values in json format.
 
 store the api key in a cookie and use for all api calls.
 
-### auth invalidate api key
+### auth invalidate api key (Logout)
 this will remove the api key from all registered microservices cache and from the database.
 
 `
@@ -67,8 +73,14 @@ the api will respond with following values. the server should save the api keys 
 | apikey | string | a unique api key that should save in a cookie |
 | apikeyexpire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
 | usertype | string | (user, researcher or admin) |
+
+<br>
+<br>
+
 ## password reset
 this set of api endpoints serves as a password reset service. this is consisting of two endpoints.
+
+<br>
 
 ### password reset request
 
@@ -122,16 +134,231 @@ the api will return following data.
 ## signup
 this set of api endpoints provide service to create or remove user accounts, researcher accounts and admin accounts.
 
+<br>
+
 ### signup user account
+this will create a normal user account.
 
+`
+POST /api/users/signup/create-user-account
+`
 
-### signup researcher account
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| firstname | - | yes |
+| lastname | - | yes |
+| email | email address | yes |
+| password | the new password | yes |
+| password-confirm | the new password confirmation. | yes |
+
+ the api will respond with following information.
+ 
+ 
+ |parameter | value | notes |
+ | :------------ | :------------ | :------------ |
+ | error | boolean | will return true if success |
+ | message | string | if there is an error, this will return an error message |
+ | errorcode | integer | if there is an error, this will return the error code |
+ 
+
+### signup researcher account 
+
+`
+POST /api/users/signup/create-researcher-account
+`
+
+the api requires followng parameters.
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| firstname | - | yes |
+| lastname | - | yes |
+| email | email address | yes |
+| password | the new password | yes |
+| password-confirm | the new password confirmation. | yes |
+
+> Note: some additional details are required. but before that we need to discuss about it with gayantha sir.
+
+The api will respond with following details.
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
 
 
 ### signup admin account
 
+`
+POST /api/users/signup/create-admin-account
+`
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| apikey | API Key of current logged in admin | yes |
+| firstname | - | yes |
+| lastname | - | yes |
+| email | email address | yes |
+| password | the new password | yes |
+| password-confirm | the new password confirmation. | yes |
+
 > Note: the admin accounts can only created by other admin account.
 there will be a default admin account created by system. 
 
+the api will respond with following values.
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+
+
 ### confirm researcher account
-researcher accounts need to be confirmed by admins in order to get prevelages. otherwise the account will be equalent to a user account.
+researcher accounts need to be confirmed by admins in order to get prevelages. otherwise the account will be equalent to a user account. By setting confirm parameter to 0, you can unconfirm previously confirmed account.
+
+`
+POST /api/users/signup/confirm-researcher-account
+`
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| apikey | API Key of current logged in admin | yes |
+| confirmation | boolean - (1/0) defaul value is 1 (true)  | no |
+
+>Note: Only admins can confirm the account.
+
+the api will respond with following value
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+
+
+<br>
+<br>
+
+## Account Details
+This api endpoint set allows users to get and change their account details such as name, email, password, etc.
+
+<br>
+### Get Account Details
+This api end-point will return a json object of all account details.
+
+`
+POST /api/users/account/get-account-details
+`
+
+This will require some parameters.
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| apikey | API Key of current logged user | yes |
+
+The api will responds with a JSON array like bellow. All possible parameters are introduced in the table bellow.
+``` json
+{
+	"error":"false",
+	"data":{
+		"firstname":"first name",
+		"lastname":"last name",
+		"email":"example@abc.com",
+		"emailconfirmed":true,
+		"bio":"short introduction",
+		"type":"user"
+		}
+}
+```
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+| data | json string object | will return user account details if success |
+
+The data field might have following details.
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| firstname | string |  |
+| lastname | string |  |
+| email | string |  |
+| emailconfirmed | boolean |  |
+| type | string | user account type (User, researcher or admin) |
+| bio | string | description about bio |
+| image | string | url for the profile picture |
+
+<br>
+>Note: Some other details might have to return for account types other than user. will be discussed.
+
+
+
+### Set Account Details
+This api end-point will return a json object of all account details.
+
+`
+POST /api/users/account/set-account-details
+`
+
+This will require some parameters.
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| apikey | API Key of current logged user | yes |
+| data | a json array of changed information. | yes |
+
+>Note: If email was changed, it needed to be confirm once again.
+
+The api will responds with a JSON array like bellow. All possible parameters are introduced in the table bellow.
+``` json
+"data":{
+	"firstname":"first name",
+	"lastname":"last name",
+	"email":"example@abc.com",
+	"bio":"short introduction",
+	"type":"user",
+  ...
+}
+```
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| firstname | string |  |
+| lastname | string |  |
+| email | string |  |
+| type | string | user account type (User or researcher) |
+| bio | string | description about bio |
+
+> Note: User and researcher accounts can be changed in between. By changing, a confirmed researcher account will not loose it's confirmation. Admin accounts cannot be changed.
+
+By not defining any of this will keep the current value unchanged. The api will respond following values.
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+
+### Set Account Password
+
+### Upload User account Image
+
+### Remove User account Image
+
+Delete account's profile picture. 
+
+|parameter | value | required |
+| :------------ | :------------ | :------------ |
+| apikey | API Key of current logged user | yes |
+
+Response:
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
