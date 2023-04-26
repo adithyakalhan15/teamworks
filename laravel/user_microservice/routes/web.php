@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\users\AuthenticateUserController;
 use App\Http\Controllers\users\SignUpController;
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,22 @@ Route::get('/', function () {
 Route::get('/signup', function () {
     return view('welcome');
 });
+//auth or login
+Route::prefix("auth")->controller(SignUpController::class)->group(function (){
+    Route::post("login", "LoginToAccount");
+    Route::post("invalidate-api-key", "InvalidateApiKey");
+    Route::post("validate-api-key", "ValidateApiKey");
+});
 
-//Signup
+
+//Password reset
+Route::prefix("pwreset")->controller(SignUpController::class)->group(function (){
+    Route::post("request-password-reset", "CreateUserAccount");
+    Route::post("reset-password", "CreateResearcherAccount");
+});
+
+
+//Signup //request-password-reset
 Route::prefix("signup")->controller(SignUpController::class)->group(function (){
     Route::post("create-user-account", "CreateUserAccount");
     Route::post("create-researcher-account", "CreateResearcherAccount");

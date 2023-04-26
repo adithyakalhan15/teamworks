@@ -33,8 +33,8 @@ the api will respond with following values in json format.
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-| apikey | string | a unique api key that should save in a cookie |
-| apikeyexpire | integer | this will return unix time stamp for api key expire date. will not be defined if keeploggedin value was 1|
+| api_key | string | a unique api key that should save in a cookie |
+| api_key_expire | integer | this will return unix time stamp for api key expire date. will not be defined if keeploggedin value was 1|
 
 store the api key in a cookie and use for all api calls.
 
@@ -61,7 +61,7 @@ POST /api/users/auth/validate-api-key
 |parameters|value| required| notes |
 | :------------ | :------------ | :------------ | :------------ |
 |servicesecret|string | yes | a unique identifire for each microservice.
-|apikey|string|yes| - |
+|api_key|string|yes| - |
 
 the api will respond with following values. the server should save the api keys and the expireation date in cache table for fast access.
 
@@ -70,8 +70,8 @@ the api will respond with following values. the server should save the api keys 
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-| apikey | string | a unique api key that should save in a cookie |
-| apikeyexpire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
+| api_key | string | a unique api key that should save in a cookie |
+| api_key_expire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
 | usertype | string | (user, researcher or admin) |
 
 <br>
@@ -197,7 +197,7 @@ POST /api/users/signup/create-admin-account
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| apikey | API Key of current logged in admin | yes |
+| api_key | API Key of current logged in admin | yes |
 | firstname | - | yes |
 | lastname | - | yes |
 | email | email address | yes |
@@ -225,7 +225,7 @@ POST /api/users/signup/confirm-researcher-account
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| apikey | API Key of current logged in admin | yes |
+| api_key | API Key of current logged in admin | yes |
 | confirmation | boolean - (1/0) defaul value is 1 (true)  | no |
 
 >Note: Only admins can confirm the account.
@@ -257,7 +257,7 @@ This will require some parameters.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| apikey | API Key of current logged user | yes |
+| api_key | API Key of current logged user | yes |
 
 The api will responds with a JSON array like bellow. All possible parameters are introduced in the table bellow.
 ``` json
@@ -309,7 +309,7 @@ This will require some parameters.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| apikey | API Key of current logged user | yes |
+| api_key | API Key of current logged user | yes |
 | data | a json array of changed information. | yes |
 
 >Note: If email was changed, it needed to be confirm once again.
@@ -354,7 +354,7 @@ Delete account's profile picture.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| apikey | API Key of current logged user | yes |
+| api_key | API Key of current logged user | yes |
 
 Response:
 
