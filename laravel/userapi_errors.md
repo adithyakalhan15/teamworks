@@ -8,3 +8,5 @@
 1050 - incorrect password
 1051 - API key does not exists
 1052 - API key expired
+1053 - Password reset request token id not exists
+1054 - Password reset request token expired

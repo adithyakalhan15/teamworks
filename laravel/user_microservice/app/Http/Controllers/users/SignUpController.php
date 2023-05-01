@@ -19,32 +19,32 @@ class SignUpController extends Controller
 
     function CreateUserAccount(Request $request){
         $output = new \stdClass();
-        if (!$this->ValidateJSON($request, array(
+        if ($this->ValidateJSON($request, array(
             "firstname"=>"required",
             "email"=>"required|email|unique:App\Models\User,email",
             "password"=>"required|min:8|max:20|confirmed",
         ))){
-          return '';  
+           //create the account
+            try {
+                //code...
+                $id = $this->CreateAllAccounts($request);
+
+                //send the confirmation email
+
+                //set output
+                $output->error = FALSE;
+
+            } catch (\Throwable $th) {
+                //throw $th;
+                $output->error = TRUE;
+                $output->message = "Internal server error";
+                $output->errorcode = 1001;
+            }
+
+            return \json_encode($output);
         }
 
-        //create the account
-        try {
-            //code...
-            $id = $this->CreateAllAccounts($request);
-
-            //send the confirmation email
-
-            //set output
-            $output->error = FALSE;
-
-        } catch (\Throwable $th) {
-            //throw $th;
-            $output->error = TRUE;
-            $output->message = "Internal server error";
-            $output->errorcode = 1001;
-        }
-
-        return \json_encode($output);
+        
     }
 
     
@@ -146,5 +146,7 @@ class SignUpController extends Controller
         $user->type = $type;
 
         $user->save();
+
+        return $user->id;
     }
 }

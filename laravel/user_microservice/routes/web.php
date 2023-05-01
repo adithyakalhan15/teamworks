@@ -45,8 +45,8 @@ Route::prefix("pwreset")->controller(ResetUserPasswordController::class)->group(
 Route::prefix("signup")->controller(SignUpController::class)->group(function (){
     Route::post("create-user-account", "CreateUserAccount");
     Route::post("create-researcher-account", "CreateResearcherAccount");
-    Route::post("create-admin-account", "CreateAdminAccount");
-
-    Route::post("approve-researcher-account", "ApproveResearcherAccount");
+    Route::post("create-admin-account", "CreateAdminAccount")->auth('admin');
+    
+    Route::post("approve-researcher-account", "ApproveResearcherAccount")->auth('admin');
 
 });

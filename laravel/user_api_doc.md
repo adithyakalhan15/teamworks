@@ -104,6 +104,7 @@ the api will take email addreas as the parameter.
 |parameter|value|required|
 | :------------ | :------------ | :------------ |
 |email|email address of the user| yes|
+|token_id| the pasword reset token. if this was sent, the email will resend to the user. | no|
 |url| string - for callback with the token| no|
 
 the api will respond with following parameters.
@@ -113,7 +114,7 @@ the api will respond with following parameters.
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-
+| token_id | integer | This can be used to resend the email with reset url |
 
 ### reset the password
 
@@ -156,7 +157,7 @@ POST /api/users/signup/create-user-account
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
 | firstname | - | yes |
-| lastname | - | yes |
+| lastname | - | no |
 | email | email address | yes |
 | password | the new password | yes |
 | password_confirmation | the new password confirmation. | yes |

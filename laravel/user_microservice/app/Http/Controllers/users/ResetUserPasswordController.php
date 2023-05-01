@@ -4,13 +4,18 @@ namespace App\Http\Controllers\users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use App\Models\User;
 use App\Models\PasswordResetTokens;
 
+use App\Mail\ResetPasswordMail;
+
 class ResetUserPasswordController extends Controller
 {
     //
+
+    const DEFAULT_PASSWORD_RESET_URL = "";
 
     public function RequestPasswordReset(Request $request)
     {
@@ -21,15 +26,47 @@ class ResetUserPasswordController extends Controller
             $out = new \stdClass();
             $user = User::where('email', '=', $request['user']);
 
-            $token = CreateResetToken();
-            //create a token CreateResetToken
-            $tr = new PasswordResetTokens();
-            $tr->user_id = $user->id;
-            $tr->token = $token;
-            $tr->token_expire = date('Y-m-d H:i:s', strtotime('+6 hours'));;
-            $tr->save();
+            $url = DEFAULT_PASSWORD_RESET_URL;
+            if ($request->has('url')){
+                $url = $request['url'];
+            }
 
-            //send the email
+            if ($request->has('token_id')){
+                $token = PasswordResetFromToken::find($request['token_id']);
+                if (!is_null($token)){
+                    //resend the mail
+                    $url .= "?token=" . $token->token;
+
+                    //send the email
+                    $email = new ResetPasswordMail($user, $url);
+                    Mail::to($request['email'])->send($email);
+
+                    $out->error = FALSE;
+                }else{
+                    $out->error = TRUE;
+                    $out->errorcode = 1053;
+                    $out->message = "Password reset request token id not exists";
+                }
+            }else{
+                $token = CreateResetToken();
+                //create a token CreateResetToken
+                $tr = new PasswordResetTokens();
+                $tr->user_id = $user->id;
+                $tr->token = $token;
+                $tr->token_expire = date('Y-m-d H:i:s', strtotime('+6 hours'));;
+                $tr->save();
+
+
+                $url .= "?token=" . $token;
+
+                //send the email
+                $email = new ResetPasswordMail($user, $url);
+                Mail::to($request['email'])->send($email);
+
+                $out->error = FALSE;
+                $out->token_id = $tr->id;
+            }
+            
 
             return json_encode($out);
         }
@@ -39,8 +76,40 @@ class ResetUserPasswordController extends Controller
     public function PasswordResetFromToken(Request $request)
     {
         # code...
-        $out = new \stdClass();
-        return json_encode($out);
+        if ($this->validateJSON($request, array(
+            "token" => "required|exists:App\Models\ResetPasswordMail,token",
+            "password" => "required|confirmed|min:8|max:20",
+        ))){
+            $out = new \stdClass();
+            $token = ResetPasswordMail::where('token',  '=', $request['token'])->get()->first();
+
+            //check whether the token expired or valid
+            $expd = strtotime($token->token_expire);
+            $time_now = time();
+
+            if ($expd - $time_now > 0){
+                //valid
+                $user = User::find($token->user_id);
+                if (!is_null($user)){
+                    $user->password = Hash::make($request['password']);
+                    $user->save();
+                    $out->error = FALSE;
+                }else{
+                    $out->error = TRUE;
+                    $out->errorcode = 1054;
+                    $out->message = "Password reset request token expired";
+                }
+            }else{
+                //expired
+                $token->delete();
+                $out->error = TRUE;
+                $out->errorcode = 1054;
+                $out->message = "Password reset request token expired";
+            }
+
+            return json_encode($out);
+        }
+        
     }
 
 
