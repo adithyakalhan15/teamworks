@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\users\AuthenticateUserController;
+use App\Http\Controllers\users\ResetUserPasswordController;
 use App\Http\Controllers\users\SignUpController;
-/*
+/* 
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -18,23 +21,23 @@ use App\Http\Controllers\users\SignUpController;
 //Base url will be http://localhost/api/users/
 Route::get('/', function () {
     return view('welcome');
-});
+})->name("login");
 
-Route::get('/signup', function () {
+Route::middleware(['auth:user'])->get('/abc', function () {
     return view('welcome');
 });
 //auth or login
-Route::prefix("auth")->controller(SignUpController::class)->group(function (){
-    Route::post("login", "LoginToAccount");
+Route::prefix("auth")->controller(AuthenticateUserController::class)->group(function (){
+    Route::post("login", "LoginToAccount"); 
     Route::post("invalidate-api-key", "InvalidateApiKey");
     Route::post("validate-api-key", "ValidateApiKey");
 });
 
 
 //Password reset
-Route::prefix("pwreset")->controller(SignUpController::class)->group(function (){
-    Route::post("request-password-reset", "CreateUserAccount");
-    Route::post("reset-password", "CreateResearcherAccount");
+Route::prefix("pwreset")->controller(ResetUserPasswordController::class)->group(function (){
+    Route::post("request-password-reset", "RequestPasswordReset");
+    Route::post("reset-password", "PasswordResetFromToken");
 });
 
 

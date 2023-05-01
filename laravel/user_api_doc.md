@@ -34,7 +34,8 @@ the api will respond with following values in json format.
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
 | api_key | string | a unique api key that should save in a cookie |
-| api_key_expire | integer | this will return unix time stamp for api key expire date. will not be defined if keeploggedin value was 1|
+| api_key_expire | integer | this will return unix timestamp (UTC) for api key expire date. will not be defined if keeploggedin value was 1|
+| user_type | string | (user, researcher or admin) |
 
 store the api key in a cookie and use for all api calls.
 
@@ -45,11 +46,19 @@ this will remove the api key from all registered microservices cache and from th
 POST /api/users/auth/invalidate-api-key
 `
 
-this will not take any parameter. the api returns following values.
+this will take following parameters. 
 
-|parameter|value|
-| :------------ | :------------ |
-|error|boolean|
+| parameter | value | required |
+| :------------ | :------------ | :------------ |
+| api_key | Current user's api key | yes |
+
+the api returns following values.
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
 
 ### auth validate api key
 thia api endpiont is for other microservices to validate the api key.
@@ -60,7 +69,7 @@ POST /api/users/auth/validate-api-key
 
 |parameters|value| required| notes |
 | :------------ | :------------ | :------------ | :------------ |
-|servicesecret|string | yes | a unique identifire for each microservice.
+|service_secret|string | yes | a unique identifire for each microservice.
 |api_key|string|yes| - |
 
 the api will respond with following values. the server should save the api keys and the expireation date in cache table for fast access.
@@ -72,7 +81,7 @@ the api will respond with following values. the server should save the api keys 
 | errorcode | integer | if there is an error, this will return the error code |
 | api_key | string | a unique api key that should save in a cookie |
 | api_key_expire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
-| usertype | string | (user, researcher or admin) |
+| user_type | string | (user, researcher or admin) |
 
 <br>
 <br>
