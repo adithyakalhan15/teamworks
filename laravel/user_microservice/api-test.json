@@ -1,0 +1,83 @@
+[
+    {
+        "url":"http://127.0.0.1:8000/auth/login",
+        "method": "post",
+        "parameters": {
+            "email": "admin@root.com",
+            "password": "admin@root23"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1000
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/login",
+        "method": "post",
+        "parameters": {
+            "email": "hello@example.com",
+            "password": "admin@root23245"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1050,
+            "message": "Incorrect password."
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/login",
+        "method": "post",
+        "parameters": {
+            "email": "hello@example.com",
+            "password": "admin@root23"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1050
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/invalidate-api-key",
+        "method": "post",
+        "parameters": {
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1051
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/invalidate-api-key",
+        "method": "post",
+        "parameters": {
+            "api_key": "gr5gdf4eERdf54tsdf4tr"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1051
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/invalidate-api-key",
+        "method": "post",
+        "parameters": {
+            "api_key": "gr5gdf4eERdf54tsdf4tr"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1051
+        }
+    },
+    {
+        "url":"http://127.0.0.1:8000/auth/validate-api-key",
+        "method": "post",
+        "parameters": {
+            "service_secret":"test-api-service",
+            "api_key": "Jdp9hydK4jazMBfkAW4ZFs9PBnhNfXxiBkYKtGPnl67uNX5L5VG88nG1dfVGk4F2sqq0fKfVOdgxgwE6rI7eJWnu2xLRyazDXoOt2Gx4w17JLg80LFT18XFZdaMmsIKVDGA8tMJzGZ6SezfnFhkzxW8l6oHBfzRNYsVfRcpZ7bYVZ4XZqQ7JVlhtoo6HhiHuT7Vf1foxKJ5vLYcU49IAGCbR5P91ajoad4ZMpaJV2WyrWyrLta09U4y4uKnqHPmaGhtdW7fp36zbh4mKqal6eZSdc3dBD91HdtOrBMHN7cGAzTgkaRdJunqLsQ3uGXaeKLFWbITcwBM5ikqsqI8X8O7A7cgRFGT4WAaZi2bHSVDAjbWHDCxEVRnoHQTdx8gdAI718PoNHLnfhz8WaT1tC4xbaDY23cvnWozsHEhlyYDfEMAVDAh3y7BL4GHgrmjFOsrLeLnp6r52XH4FPVdjepRJMwrSRhmPdLvtudHguTrL3JfJBBHA8w2c2dnuZ97m"
+        },
+        "result": {
+            "error": true,
+            "errorcode": 1051
+        }
+    }
+]

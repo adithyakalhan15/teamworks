@@ -15,16 +15,22 @@ return new class extends Migration
             $table->id();
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('username')->unique()->nullable();
-            $table->string('email')->unique();
+            $table->string('username', 100)->unique()->nullable();
+            $table->string('email', 100)->unique();
             $table->timestamp('email_verified_at')->nullable();
 
             $table->string('type', 30);
             $table->string('password');            
-            $table->string('bio', 2000)->nullable();            
+            $table->text('bio')->nullable();            
             $table->string('image')->nullable();            
             $table->integer('is_verified_email')->default(0);            
-            $table->integer('is_verified')->default(0);           
+            $table->integer('is_verified')->default(0);
+            
+            //authentication
+            $table->string('apikey', 550)->nullable();
+            $table->timestamp('key_created')->nullable();
+            $table->timestamp('key_expire')->nullable();
+
             //$table->rememberToken();
             $table->timestamps();
         });
