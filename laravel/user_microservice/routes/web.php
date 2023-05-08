@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\users\AuthenticateUserController;
 use App\Http\Controllers\users\ResetUserPasswordController;
 use App\Http\Controllers\users\SignUpController;
+use App\Http\Controllers\users\AccountManagementController;
 /* 
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name("login");
 
-Route::middleware(['auth:user'])->get('/abc', function () {
-    return view('welcome');
-});
+
 //auth or login
 Route::prefix("auth")->controller(AuthenticateUserController::class)->group(function (){
     Route::post("login", "LoginToAccount"); 
@@ -41,12 +40,19 @@ Route::prefix("pwreset")->controller(ResetUserPasswordController::class)->group(
 });
 
 
-//Signup //request-password-reset
+//Signup //request-password-reset 
 Route::prefix("signup")->controller(SignUpController::class)->group(function (){
     Route::post("create-user-account", "CreateUserAccount");
     Route::post("create-researcher-account", "CreateResearcherAccount");
-    Route::post("create-admin-account", "CreateAdminAccount")->auth('admin');
+    Route::middleware(['auth:admin'])->post("create-admin-account", "CreateAdminAccount");
     
-    Route::post("approve-researcher-account", "ApproveResearcherAccount")->auth('admin');
+    Route::middleware(['auth:admin'])->post("approve-researcher-account", "ApproveResearcherAccount");
+});
 
+
+//Account management
+Route::prefix("account")->controller(AccountManagementController::class)->group(function (){
+    Route::post("get-account-list", "GetAllAccountList");
+    Route::post("get-account-details", "CreateUserAccount");
+    Route::post("set-account-details", "CreateResearcherAccount");
 });
