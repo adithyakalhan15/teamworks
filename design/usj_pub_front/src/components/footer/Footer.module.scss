@@ -1,0 +1,20 @@
+$footer-color-1:#0c77c9d4;
+$footer-background:#34a7ff2d;
+
+.footer{
+    margin-top: 5%;
+    padding-top: 20px; 
+    background-color: $footer-background;
+}
+
+.footer h2{
+    font-size: 30px;
+}
+
+.list1{
+    list-style-type: none;
+    font-size: 17px; 
+}
+.list1 li{
+    padding-top: 15px;
+}
