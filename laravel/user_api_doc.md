@@ -11,7 +11,7 @@ the api key sould save in a cookie for requesting
 
 <br>
 
-### auth login -done
+### auth login
 this api will be used for login
 
 `
@@ -33,34 +33,25 @@ the api will respond with following values in json format.
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-| api_key | string | a unique api key that should save in a cookie |
-| api_key_expire | integer | this will return unix timestamp (UTC) for api key expire date. will not be defined if keeploggedin value was 1|
-| user_type | string | (user, researcher or admin) |
+| apikey | string | a unique api key that should save in a cookie |
+| apikeyexpire | integer | this will return unix time stamp for api key expire date. will not be defined if keeploggedin value was 1|
 
 store the api key in a cookie and use for all api calls.
 
-### auth invalidate api key (Logout) -done
+### auth invalidate api key (Logout)
 this will remove the api key from all registered microservices cache and from the database.
 
 `
 POST /api/users/auth/invalidate-api-key
 `
 
-this will take following parameters. 
+this will not take any parameter. the api returns following values.
 
-| parameter | value | required |
-| :------------ | :------------ | :------------ |
-| api_key | Current user's api key | yes |
+|parameter|value|
+| :------------ | :------------ |
+|error|boolean|
 
-the api returns following values.
-
-|parameter | value | notes |
-| :------------ | :------------ | :------------ |
-| error | boolean | will return true if success |
-| message | string | if there is an error, this will return an error message |
-| errorcode | integer | if there is an error, this will return the error code |
-
-### auth validate api key -done
+### auth validate api key
 thia api endpiont is for other microservices to validate the api key.
 
 `
@@ -69,8 +60,8 @@ POST /api/users/auth/validate-api-key
 
 |parameters|value| required| notes |
 | :------------ | :------------ | :------------ | :------------ |
-|service_secret|string | yes | a unique identifire for each microservice.
-|api_key|string|yes| - |
+|servicesecret|string | yes | a unique identifire for each microservice.
+|apikey|string|yes| - |
 
 the api will respond with following values. the server should save the api keys and the expireation date in cache table for fast access.
 
@@ -79,9 +70,9 @@ the api will respond with following values. the server should save the api keys 
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-| api_key | string | a unique api key that should save in a cookie |
-| api_key_expire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
-| user_type | string | (user, researcher or admin) |
+| apikey | string | a unique api key that should save in a cookie |
+| apikeyexpire | integer | this will return unix time stamp for api key expiration in cache. this will be mostly a shorter period of time|
+| usertype | string | (user, researcher or admin) |
 
 <br>
 <br>
@@ -91,7 +82,7 @@ this set of api endpoints serves as a password reset service. this is consisting
 
 <br>
 
-### password reset request -done
+### password reset request
 
 this will generate a token for restting password, that would be valid for 6hours. The token will be sent to user's email with reset link.
 
@@ -104,7 +95,6 @@ the api will take email addreas as the parameter.
 |parameter|value|required|
 | :------------ | :------------ | :------------ |
 |email|email address of the user| yes|
-|token_id| the pasword reset token. if this was sent, the email will resend to the user. | no|
 |url| string - for callback with the token| no|
 
 the api will respond with following parameters.
@@ -114,9 +104,9 @@ the api will respond with following parameters.
 | error | boolean | will return true if success |
 | message | string | if there is an error, this will return an error message |
 | errorcode | integer | if there is an error, this will return the error code |
-| token_id | integer | This can be used to resend the email with reset url |
 
-### reset the password -done
+
+### reset the password
 
 once the reset token was genarated, the url with the token will sent to the user's email address.
 after that, use this api endpoint for resetting the password.
@@ -147,7 +137,7 @@ this set of api endpoints provide service to create or remove user accounts, res
 
 <br>
 
-### signup user account -done
+### signup user account
 this will create a normal user account.
 
 `
@@ -157,7 +147,7 @@ POST /api/users/signup/create-user-account
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
 | firstname | - | yes |
-| lastname | - | no |
+| lastname | - | yes |
 | email | email address | yes |
 | password | the new password | yes |
 | password_confirmation | the new password confirmation. | yes |
@@ -172,7 +162,7 @@ POST /api/users/signup/create-user-account
  | errorcode | integer | if there is an error, this will return the error code |
  
 
-### signup researcher account -done
+### signup researcher account 
 
 `
 POST /api/users/signup/create-researcher-account
@@ -199,7 +189,7 @@ The api will respond with following details.
 | errorcode | integer | if there is an error, this will return the error code |
 
 
-### signup admin account -done
+### signup admin account
 
 `
 POST /api/users/signup/create-admin-account
@@ -207,7 +197,7 @@ POST /api/users/signup/create-admin-account
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| api_key | API Key of current logged in admin | yes |
+| apikey | API Key of current logged in admin | yes |
 | firstname | - | yes |
 | lastname | - | yes |
 | email | email address | yes |
@@ -226,17 +216,16 @@ the api will respond with following values.
 | errorcode | integer | if there is an error, this will return the error code |
 
 
-### Approve researcher account -done
+### confirm researcher account
 researcher accounts need to be confirmed by admins in order to get prevelages. otherwise the account will be equalent to a user account. By setting confirm parameter to 0, you can unconfirm previously confirmed account.
 
 `
-POST /api/users/signup/approve-researcher-account
+POST /api/users/signup/confirm-researcher-account
 `
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| api_key | API Key of current logged in admin | yes |
-| account_id | researcher account id | yes |
+| apikey | API Key of current logged in admin | yes |
 | confirmation | boolean - (1/0) defaul value is 1 (true)  | no |
 
 >Note: Only admins can confirm the account.
@@ -257,33 +246,6 @@ the api will respond with following value
 This api endpoint set allows users to get and change their account details such as name, email, password, etc.
 
 <br>
-
-### Get Accounts List
-
-This api endpoint will send account list for admins. (Only for admins)
-
-`
-POST /api/users/account/get-account-list
-`
-
-
-|parameter | value | required |
-| :------------ | :------------ | :------------ |
-| api_key | API Key of current logged user | yes |
-| s | search value | no |
-| type | filter for account type (all, researcher, user, admin) - Default "all" | no |
-| per_page | Number of accounts per page. Default "20" | no |
-| page | Number of accounts per page. Default 1. | no |
-
-the api will respond with following value
-
-|parameter | value | notes |
-| :------------ | :------------ | :------------ |
-| error | boolean | will return true if success |
-| message | string | if there is an error, this will return an error message |
-| errorcode | integer | if there is an error, this will return the error code |
-| accounts | JSON array | if there is an error, this will return the error code |
-
 ### Get Account Details
 This api end-point will return a json object of all account details.
 
@@ -295,7 +257,7 @@ This will require some parameters.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| api_key | API Key of current logged user | yes |
+| apikey | API Key of current logged user | yes |
 
 The api will responds with a JSON array like bellow. All possible parameters are introduced in the table bellow.
 ``` json
@@ -347,7 +309,7 @@ This will require some parameters.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| api_key | API Key of current logged user | yes |
+| apikey | API Key of current logged user | yes |
 | data | a json array of changed information. | yes |
 
 >Note: If email was changed, it needed to be confirm once again.
@@ -392,7 +354,7 @@ Delete account's profile picture.
 
 |parameter | value | required |
 | :------------ | :------------ | :------------ |
-| api_key | API Key of current logged user | yes |
+| apikey | API Key of current logged user | yes |
 
 Response:
 

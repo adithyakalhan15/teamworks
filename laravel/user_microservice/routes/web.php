@@ -1,13 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
-
-use App\Http\Controllers\users\AuthenticateUserController;
-use App\Http\Controllers\users\ResetUserPasswordController;
 use App\Http\Controllers\users\SignUpController;
-use App\Http\Controllers\users\AccountManagementController;
-/* 
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -22,37 +17,18 @@ use App\Http\Controllers\users\AccountManagementController;
 //Base url will be http://localhost/api/users/
 Route::get('/', function () {
     return view('welcome');
-})->name("login");
-
-
-//auth or login
-Route::prefix("auth")->controller(AuthenticateUserController::class)->group(function (){
-    Route::post("login", "LoginToAccount"); 
-    Route::post("invalidate-api-key", "InvalidateApiKey");
-    Route::post("validate-api-key", "ValidateApiKey");
 });
 
-
-//Password reset
-Route::prefix("pwreset")->controller(ResetUserPasswordController::class)->group(function (){
-    Route::post("request-password-reset", "RequestPasswordReset");
-    Route::post("reset-password", "PasswordResetFromToken");
+Route::get('/signup', function () {
+    return view('welcome');
 });
 
-
-//Signup //request-password-reset 
+//Signup
 Route::prefix("signup")->controller(SignUpController::class)->group(function (){
     Route::post("create-user-account", "CreateUserAccount");
     Route::post("create-researcher-account", "CreateResearcherAccount");
-    Route::middleware(['auth:admin'])->post("create-admin-account", "CreateAdminAccount");
-    
-    Route::middleware(['auth:admin'])->post("approve-researcher-account", "ApproveResearcherAccount");
-});
+    Route::post("create-admin-account", "CreateAdminAccount");
 
+    Route::post("approve-researcher-account", "ApproveResearcherAccount");
 
-//Account management
-Route::prefix("account")->controller(AccountManagementController::class)->group(function (){
-    Route::post("get-account-list", "GetAllAccountList");
-    Route::post("get-account-details", "CreateUserAccount");
-    Route::post("set-account-details", "CreateResearcherAccount");
 });

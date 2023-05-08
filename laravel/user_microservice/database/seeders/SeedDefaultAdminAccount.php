@@ -16,12 +16,11 @@ class SeedDefaultAdminAccount extends Seeder
     {
         //
         $user = new User();
-        $user->firstname = "admin";
+        $user->fistname = "admin";
         $user->lastname = "root";
         $user->username = "admin";
         $user->password = Hash::make("admin@root23");
         $user->email = env('MAIL_FROM_ADDRESS', "admin@root.com");
-        $user->type = "admin";
-        $user->save();
+
     }
 }
