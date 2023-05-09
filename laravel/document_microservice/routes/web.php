@@ -33,15 +33,23 @@ Route::middleware(['web'])->group(function () {
 Route::get('/addnew', "App\Http\Controllers\MongoTestController@AddElement");
 Route::get('/get', "App\Http\Controllers\MongoTestController@GetElement");
 
+//api routs
+Route::prefix("serve")->controller(MongoTestController::class)->group(function (){
+    Route::get("get-documents-by-ids", "GetDocumentByID"); 
+    Route::get("get-document-info", "GetDocumentInfomation"); 
+    Route::get("search", "SearchDocuments"); 
+    Route::get("document-download/{resource_id}", "DownloadDocumentResource"); 
+});
 
-/*
-Route::group([
-        'middleware' => ['api', 'cors'],
-        'namespace' => $this->namespace,
-        'prefix' => 'api',
-    ], function ($router) {
-         //Add you routes here, for example:
-         Route::apiResource('/posts','PostController');
-    });
 
-*/
+Route::prefix("manage")->controller(MongoTestController::class)->group(function (){
+    Route::get("get-document-contents", "GetElement"); 
+});
+
+
+Route::prefix("usercache")->controller(MongoTestController::class)->group(function (){
+    Route::get("clear-api-key", "GetElement"); 
+    Route::get("clear-all-keys", "GetElement"); 
+});
+
+

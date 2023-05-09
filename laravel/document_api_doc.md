@@ -1,5 +1,199 @@
 # Document API Documentation
 This api documentation is about user microservice. For keep it simple, api endpoints are devided into few groups.
+1. serve
+2. manage
+3. user-control
+
+> Note: For authenticating the user for the api, send the api key as Authorization header using bearer scheme. "Authorization: Bearer <api_key>"
 
 <br>
 <br>
+
+## Serve
+
+This set of api end points provide details about documents. (Research papers, podcasts, etc.)
+
+### Get Documents by ID
+
+` GET: /api/documents/serve/get-documents-by-ids `
+
+This will send a list of documents by it's ids. IDs can be string provied by mongo db.
+
+##### Request parameters
+
+| parameter | required | Notes |
+| :------------ | :------------ | :------------ |
+| id_list | Yes | this is a encoded string of JSON array containing list of ids |
+
+> Note: If the user is logged in, send the api key in headers. Use bearer scheme. "Authorization: Bearer <access_token>"
+
+Example:
+
+```javascript
+let id_list = ["dsdsd34er454t656567", "244tre34tt6678th5" ];
+var fd = new FormData();
+fd.append("id_list", JSON.stringify(id_list));
+
+var req = new XMLHttpRequest();
+req.setRequestHeader("Authorization", "Bearer <access_token>");
+...
+req.open("GET", "/api/documents/serve/get-documents-by-ids");
+req.send(fd);
+```
+
+##### Response Parameters
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+| data | json array | |
+
+```json
+{
+    data:[
+        {
+            "id":"<document id>",
+            "type": "<document type : string>",
+            "auther":{
+                "id":"",
+                "name":""
+            },
+            "date":"<unix timestamp :int>",
+            "doi":"",
+            "doi":"",
+            "doi":"",
+            "doi":"",
+            "resource_url":""
+        }
+    ]
+}
+```
+> these information needed to be decided
+
+<br>
+
+### Get Document Info
+
+` GET: /api/documents/serve/get-document-info `
+
+This will return all details of the document for display. Autherisation is not necessary. But might need for some tasks.
+
+##### Request paramters
+
+| parameter | required | Notes |
+| :------------ | :------------ | :------------ |
+| id | Yes | the id of the required document |
+
+> Note: If the user is logged in, send the api key in headers. Use bearer scheme. "Authorization: Bearer <access_token>"
+
+This will return informaion about the document including content.
+
+##### Response paramters
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+| data | json object of the document | |
+
+```json
+{
+    data:{
+        "id":"<document id>",
+        "type": "<document type : string>",
+        "auther":{
+            "id":"",
+            "name":""
+        },
+        "date":"<unix timestamp :int>",
+        "doi":"",
+        "doi":"",
+        "doi":"",
+        "doi":"",
+        "content":"",
+        "resource_url":""
+    }
+}
+```
+
+
+### Search document
+
+` GET: /api/documents/serve/search`
+
+##### Request paramters
+
+This api endpoint provides facilities to search, filter and reciew document informaion.
+
+| parameter | required | Notes |
+| :------------ | :------------ | :------------ |
+| s | Yes | the search phrase |
+| filter-by| no | <field name > of the filter |
+| sort-by | no | |
+| order | no | define whether in ascending order or descending order. Works only if sort-by is defined. |
+| page | no | page number |
+| perpage | no | number of documents per page | 
+
+
+The filter-by may have multiple fields seperated by commas.
+
+##### Response paramters
+
+|parameter | value | notes |
+| :------------ | :------------ | :------------ |
+| error | boolean | will return true if success |
+| message | string | if there is an error, this will return an error message |
+| errorcode | integer | if there is an error, this will return the error code |
+| data | json array | |
+
+```json
+{
+    data:[
+        {
+            "id":"<document id>",
+            "type": "<document type : string>",
+            "auther":{
+                "id":"",
+                "name":""
+            },
+            "date":"<unix timestamp :int>",
+            "doi":"",
+            "doi":"",
+            "doi":"",
+            "doi":"",
+            "resource_url":""
+        }
+    ]
+}
+```
+
+### Download Resources
+
+` GET: /api/documents/serve/document-download/<document resource id>`
+
+This will allow to download the files / resources that are asign to a current document. This url will automatically generated by this API.
+
+<br>
+<br>
+
+## Manage
+
+This api will allow researches and admins to manage (create, publish, unpublish, edit, remove, and approve) research materials. 
+Only researchers and admins have access to this set of api endpoints.
+
+### Create New Text Document
+
+` POST: /api/documents/manage/create-text-document `
+
+##### Request paramters
+
+This api endpoint provides facilities to search, filter and reciew document informaion.
+
+| parameter | required | Notes |
+| :------------ | :------------ | :------------ |
+|  |  |  |
+
+
