@@ -1,0 +1,752 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/326062916
+
+Performance of Different Substrates on the Production of Oyster Mushroom
+(Pleurotus Florida) at Gokuleshwor, Darchula
+Article in International Journal of Scientific and Research Publications · June 2018
+DOI: 10.29322/IJSRP.8.6.2018.p7831
+
+CITATIONS
+
+READS
+
+21
+
+2,804
+
+6 authors, including:
+Subhas Neupane
+
+Viwek Thakur
+
+Agriculture and Forestry University Nepal
+
+Agriculture and Forestry University
+
+3 PUBLICATIONS 25 CITATIONS
+
+2 PUBLICATIONS 21 CITATIONS
+
+SEE PROFILE
+
+SEE PROFILE
+
+Bikram Bhatta
+
+Laxman Aryal
+
+Agriculture and Forestry University
+
+Nepal Agricultural Research Council
+
+3 PUBLICATIONS 23 CITATIONS
+
+32 PUBLICATIONS 94 CITATIONS
+
+SEE PROFILE
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Screening and management of viral disease of different garlic accessions under Chitwan (Nepal) condition View project
+
+SCREENING AND CHEMICAL MANAGEMENT OF FALSE SMUT (U.virens) IN RICE(Oryza sativa) GENOTOPES OF NEPAL. View project
+
+All content following this page was uploaded by Subhas Neupane on 01 August 2018.
+
+The user has requested enhancement of the downloaded file.
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+231
+
+PERFORMANCE OF DIFFERENT SUBSTRATES ON THE
+PRODUCTION OF OYSTER MUSHROOM (Pleurotus
+florida) AT GOKULESHWOR, DARCHULA
+Subhas Neupane*, Viwek Thakur**, Bikram Bhatta**, Praksah Pathak**, Bhanu Bhakta Gautam*** and
+Laxman Aryal****
+*
+
+Agriculture and Forestry University, Rampur, Chitwan, Nepal
+Agriculture and Forestry University, Rampur, Chitwan, Nepal
+***
+Institute of Agriculture and Animal Science, Gokuleshwor College, Baitadi, Nepal
+****
+Nepal Agricultural Research Council, Nepal
+**
+
+DOI: 10.29322/IJSRP.8.6.2018.p7832
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+Abstract: A research was conducted at Gokuleshwor VDC of Darchula district during 2015 to determine the
+performance of different substrate for the production of Oyster The research was carried out by growing
+florida species of Pleurotus (Oyster Mushroom), on five different substrates namely banana leaves, rice straw,
+wheat straw, mixture of rice and wheat straw and saw dust under one factor CRD design with four replication
+during summer with an average daily temperature of 260C- 300C and RH ranging from 80 to 100%. Among the
+five different treatments banana leaves was found to be suitable as it obtained more total yield per five kg of
+substrate i. e. 4.76 kg followed by other substrates. The saw dust gave lowest yield i.e. 0.97 kg which may be
+due to presence of different phenolic compounds. The duration of first mycelium colonization, fruiting and
+harvesting was shorter in banana leaves followed by other substrates and longer in saw dust. Longer stipe
+length was obtained from banana leaves (6.41 cm) and wider Cap diameter was obtained from wheat straw
+(9.87 cm) followed by other substrates. Similarly, the maximum final substrate weight per ball was obtained
+from saw dust i.e. 4.56 kg followed by other substrates and minimum in banana leaves i.e. 2.12 kg. In
+conclusion banana leaves was found best substrate for production of P. florida as it gave the highest B:C ratio
+(3.13) followed by rice straw (2.10) among the substrate used.
+Keywords: Colonization, Fruiting, Mushroom, Substrates and Yield
+INTRODUCTION
+Mushrooms are the fruiting bodies of macrofungi. They are neither plants nor animals but they have
+been placed in a kingdom of their own called the kingdom of Myceteae. The term mushroom resembles to those
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+232
+
+fungi that have stem (stipe), cap (pileus), hymenium (lamellae) and spores which are present on the underside
+of the cap (Masarirambi et al., 2011). They have heterotrophic mode of nutrition as they lack chlorophyll.
+Both edible/medicinal and poisonous species can be categorized under mushroom. In Nepal roughly 110
+mushroom species are edible, 45 are toxic and 13 have medicinal value (Poudel and Bajracharya, 2011). In
+fiscal year 2013/14 fresh mushroom production was 1900 mt, similarly in fiscal year 2014/15 production was
+2700 mt and in fiscal year 2015/16 production was reached to 9300 mt and mushroom seed production in fiscal
+year 2013/14, 2014/15 and 2015/16 was 333505, 425000 and 1488000 bottles respectively showing production
+of mushroom seed and fresh mushroom in recent years is rapidly increasing (MoAD, 2074; MoAD, 2015/16).
+Oyster mushroom (Pleurotus spp.) is very popular edible mushroom due to its excellent flavor and taste. Oyster
+mushrooms (Pleurotus spp.) were more recently domesticated, and now rank second in world production and
+first rank in Nepal. In Nepal three species of Oyster mushroom namely Pleurotus sajor-kaju P. ostreatus and P.
+florida are available. A high nutritional value of dried oyster mushrooms has been reported with protein (2550%), fat (2-5%), sugars (17-47%), mycocellulose (7-38%) and minerals (potassium, phosphorus, calcium,
+sodium) of about 8-12% (Stanley, 2011). Edible mushrooms are also rich in vitamins such as niacin, riboflavin,
+vitamin D, C, B1, B5 and B6 (Ahmed et al., 2009).
+o
+
+The different species of Pleurotus normally grow within a temperature range from 15-25 C and on
+various agricultural waste materials as substrate (Hasan et al., 2010). Although Pleurotus is leading mushroom
+in country most of the production relies on P. sajor-kaju and is only confined in winter season. Still there is
+very negligible supply of oyster mushroom in summer season although the demand is increasing day by day.
+So, P. florida; a species of oyster mushroom growing easily in warmer condition may be the best alternative for
+the year round supply of Oyster mushroom supporting summer season. P. florida gives the highest yield at 30
+o
+
+C and is preferred for summer season cultivation (Uddin et al., 2010). It can be grown on substrates rich in
+
+cellulose hemicellulose and lignin such as agro byproducts like rice straw, wheat straw, leaves and banana
+leaves, saw dust, sugarcane baggase, corncob, waste papers etc.
+In Nepal although Plant Pathology Division (PPD) introduced cultivation technology of Oyster
+mushrooms in 1981 the growth rate of this sector is not satisfactory. Most of farmers are confined to winter
+season for mushroom cultivation using rice straw as they are not familiar with efficiency and methods of
+Pleurotus mushroom production using other agro byproducts. Pleurotus cultivation is bioconversion exercise
+which greatly reduces pollution and is an efficient source of protein. In tune with the contemporary problem the
+present study was carried out to evaluate the performance of different agro based residues on the yield
+performance of Pleurotus mushroom and to find out the benefit cost ratio of Pleurotus florida mushroom
+production using different substrates specially in summer season.
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+233
+
+MATERIALS AND METHODS
+A field experiment was carried out at Gokuleshwor bazaar of Darchula district of Nepal during 5 August
+to 15 November 2015. The experiment was conducted in completely randomized design (CRD) with 5
+treatments and 4 replications. Thus, there were altogether 20 bags each of 5kg and variety used was Pleurotus
+florida.
+The treatments consisted of rice straw (t1), wheat straw (t2), 1:1 mixture of rice straw and wheat straw
+(t3), banana leaves (t4) and saw dust (t5) as substrates. These substrates were chopped into small pieces of 1-2
+inch (if required), overnight soaked, thoroughly washed with clean water and excess water was allowed to drain
+down so that water didn’t ooze out when squeezed with hand. Then each substrate were individually sterilized
+by steam using metallic drum for 2 to 3 hrs and were allowed to cool to normal temperature or 20-250c, which
+was then filled into plastic bags of size 16’’X24’’ making five layer each of 5 kg. Spawning was done at
+periphery of each layer with 20 gm in lower four layers and 25 gm in uppermost layer, then after the bags were
+tied at the mouth and few holes were made for aeration around the periphery plastic bag and were incubated in
+o
+
+dark and ventilated room at around 30 C.
+After the substrates were fully colonized with mycelium then the plastics were removed and each ball was
+established into wooden platform in dispersed light condition for growing mushroom. Watering was done in 2-3
+times a day depending upon substrate and temperature after 7-10 days fruiting bodies were appeared which
+were ready for harvest in further 3-5 days. In the similar second and third harvests were taken. Then number of
+days to full colonization, number of days to first fruiting, harvesting duration, total mushroom yield, mushroom
+pileus diameter, stipe length and final substrate weight were observed and B:C ratio was calculated. Observed
+data were then analyzed by using M-stat-c. Analysis of variance (ANOVA) was used to test differences among
+the treatments and means were separated using Duncan’s multiple range test (DMRT) at the 5 % level of
+significance.
+
+RESULTS AND DISCUSSION
+Five different types of substrates were compared with respect to production of Oyster mushroom. The
+various substrates used in this study showed variation in spawn run, duration of first fruiting, days to harvests,
+stipe length, pielus diameter, total yield and final substrate weight.
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+234
+
+Effect of different substrates on 1st colonization duration, 1st fruiting duration, 1st harvest duration, 1st
+yield, 1st harvest stipe length and 1st harvest cap diameter of oyster mushroom
+Analysis of variance (ANOVA) revealed highly significant results among the tested substrates (p≤0.01) in first
+colonization, first fruiting, first harvest duration, first harvest yield, first harvest stipe length and cap diameter.
+Banana leaves required least time for mycelium colonization (18.5 days) followed by rice straw (21 days),
+wheat straw (21.5 days), mixture of rice and wheat straw (22.75 days) and longest duration was required for
+saw dust (42 days). Similarly, first fruiting and first harvest was also found to be faster in banana leaves (19.5
+and 23 days) followed by rice straw (23 and 26.25 days), respectively. Highest fruiting and harvest duration
+was recorded in saw dust (44 and 50.25 days) respectively. In case of yield from first harvest higher yield was
+obtained from banana leaves (530 gm) followed by rice straw (463.8 gm), wheat straw (390 gm), mixture of
+rice and wheat (373.8 gm) and the lowest yield was obtained from saw dust (98.75 gm). In case of stipe length
+from first harvest was obtained in banana leaves (6.76 cm) followed by wheat straw (6.62 cm), mixture of rice
+and wheat straw (6.07 cm), rice straw (6.02 cm) and shortest was obtained from saw dust (4.6 cm). For cap
+diameter, it was found highest from wheat straw (9.87 cm) followed by banana leaves (9.17 cm), rice straw
+(8.96 cm), mixture of rice and wheat straw (8.11 cm) and lowest in saw dust (7.14 cm) under similar
+environment (Table 1)
+Mondal et al., (2010) found similar result according to him, the presence of right proportion of alpha-cellulose,
+hemicellulose and lignin is responsible for higher mycelium running rate in banana leaves and rice straw and
+for the higher mycelial growth in banana leaves and rice straw the suitable C: N ratio might be responsible
+which in turn gives higher yield. Lower mycelium running rate aggravates for lower yield in saw dust which
+might be due to presence of various kinds of polyphenolic substances, low content of cellulose and low
+moisture holding capacity. Similar result was found by Chang & Quimio (1982) and (Gohl, 1993). The type of
+agricultural wastes, single or mixtures of two different agricultural wastes used in preparing the farm substrates
+may be responsible for change in the stipe length, pileus width and overall yield of the mushrooms grown in the
+different farm substrates. Similar result was found by Chukwurah (2013). Also the major ecological factors
+such as temperature, humidity, fresh air and compact material affect stalk height, stalk diameter and cap size in
+mushroom (AMGA, 2004).
+
+Table 1. Effect of different substrates on first mycelium colonization duration, first fruiting duration, first
+harvesting duration, first yield, first harvest stipe length and first harvest cap diameter of Pleurotus mushroom
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+Mycelium
+Treatments
+
+Colonization
+duration
+
+235
+
+Fruiting
+
+Harvesting
+
+Yield
+
+duration
+
+duration
+
+(gm)
+
+Stipe
+
+Cap
+
+length
+
+diameter
+
+(cm)
+
+(cm)
+
+Rice straw
+
+21.00c
+
+23.00b
+
+26.25c
+
+463.8b
+
+6.02a
+
+8.96ab
+
+Wheat straw
+
+21.50bc
+
+23.50b
+
+26.75c
+
+390.0c
+
+6.62a
+
+9.87a
+
+22.75b
+
+24.50b
+
+28.00b
+
+373.8c
+
+6.07a
+
+8.11bc
+
+18.50d
+
+19.50c
+
+23.00d
+
+530.0a
+
+6.76a
+
+9.17ab
+
+Saw dust
+
+42.00a
+
+44.00a
+
+50.25a
+
+98.75d
+
+4.6b
+
+7.14c
+
+Mean
+
+25.15
+
+26.90
+
+30.85
+
+371.25
+
+6.01
+
+8.65
+
+LSD
+
+1.39
+
+1.69
+
+0.97
+
+65.59
+
+1.077
+
+1.22
+
+SEm(±)
+
+0.46
+
+0.56
+
+0.32
+
+21.76
+
+0.35
+
+0.40
+
+CV%
+
+3.6
+
+4.18
+
+2.09
+
+11.72
+
+11.88
+
+9.38
+
+Probability
+
+0.00
+
+0.00
+
+0.00
+
+0.00
+
+0.00
+
+0.00
+
+Rice+wheat
+mix
+Banana
+leaves
+
+Treatment means are separated by Duncan’s Multiple Range Test (DMRT) and the columns represented by the
+same letter (s) are not significantly different among each other at 5%
+Effect of different substrates on mean yield and final substrate weight of Oyster mushroom
+Analysis of variance showed highly significant result (p≤0.01) between the final mean yield and final substrate
+weight of oyster mushroom between the different substrate used as treatments. Highest final mean yield was
+obtained by banana leaves (1190 gm) followed by rice straw (973.8 gm), wheat straw (832.5 gm) and mixture
+of rice and wheat straw (826.3 gm) respectively. The lowest final yield of oyster mushroom was obtained by
+saw dust (242.5 gm). In case of final substrate weight of banana leaves had lowest weight (2.12 kg) followed by
+rice straw+wheat straw mix (2.98 kg), rice straw (3.05 kg), wheat straw (3.30 kg) and highest in saw dust (4.56
+kg) (Table.2). This suggests that the substrate which is used more by enzymatic activity of fungus gives more
+yields but in case of mix substrate the result didn’t satisfy this as water holding capacity of mixture was
+relatively low. Thus, it indicates that higher percentage of biological use efficiency of banana leaves substrate
+According to Mamiro and Mamiro (2011) the reason for higher yield from banana leaves rather than
+rice straw may be due to the high water holding capacity of banana leaves. Different kinds of polyphenolic
+substances in saw dust may results the lowest mycelium running rate (Chang & Quimio, 1982).
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+236
+
+Table 2 . Effect of different substrates on total yield and final substrate weight of Pleurotus mushroom under
+Gokuleshwor condition
+Treatments
+
+Total yield (gm)
+
+Final substrate weight (kg)
+
+Rice straw
+
+973.8b
+
+3.05b
+
+Wheat straw
+
+832.5c
+
+3.30b
+
+Rice+wheat mix
+
+826.3c
+
+2.98b
+
+Banana leaves
+
+1190.0a
+
+2.12c
+
+Saw dust
+
+242.5d
+
+4.56a
+
+Mean
+
+813
+
+3.20
+
+LSD
+
+122.9
+
+0.42
+
+SEm(±)
+
+40.77
+
+0.14
+
+CV%
+
+10.03
+
+8.85
+
+Probability
+
+0.00
+
+0.00
+
+Treatment means are separated by Duncan’s Multiple Range Test (DMRT) and the columns represented by the
+same letter (s) are not significantly different among each other at 5%
+
+Economic Analysis
+Table3. Total Cost
+
+Treatments
+
+Cost of materials
+
+Rate of substrates( 10 kg)
+
+Total cost
+
+Rice straw
+
+455
+
+Rs. 100
+
+555
+
+Wheat straw
+
+455
+
+Rs. 50
+
+505
+
+455
+
+Rs. 75
+
+530
+
+Banana leaves
+
+455
+
+-
+
+455
+
+Saw dust
+
+455
+
+Rs. 20
+
+475
+
+Mix of rice &
+wheat straw
+
+Table4. Benefit from selling of mushroom
+S.N. Treatments
+
+Average yield per Total yield Rate (Rs./kg)
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+Benefit (Rs.)
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+bag (kg)
+
+(kg)
+
+237
+
+1
+
+Rice straw
+
+0.9738
+
+3.89
+
+300
+
+1167/-
+
+2
+
+Wheat straw
+
+0.8325
+
+3.33
+
+300
+
+999/-
+
+0.8263
+
+3.30
+
+300
+
+990/-
+
+3
+
+Rice
+
+straw+wheat
+
+straw
+
+4
+
+Banana leaves
+
+1.1900
+
+4.76
+
+300
+
+1428/-
+
+5
+
+Saw dust
+
+0.2425
+
+0.97
+
+300
+
+291/-
+
+B-C Ratio:
+It is defined as the ratio of gross benefit from selling of output to the total cost incurred during production. If
+B:C is greater than 1, the project is accepted and vice-versa. Higher value of B:C indicates higher level of
+feasibility of the project in economical aspect. In our study, B-C ratio of different treatments was as follows:
+t1-Rice straw= 1167/555=2.10
+t2-Wheat straw=999/505=1.97
+t3-Mix of rice & wheat straw=990/530=1.86
+t4-Banana leaves= 1428/455=3.13
+t5-Saw dust= 291/475=0.62
+Benefit- Cost result showed that higher economic benefit was obtained from use of banana leaves as
+substrate for cultivation of P. florida with highest B: C ratio (3.13) followed by rice straw (2.10), wheat
+straw(1.97) and mixture of rice and wheat straw (1.97). But B: C was found less than 1 in case of saw dust
+(0.62) indicating some problems in gaining yield with respect to cost expense. Similar, results was found by
+Mamiro and Mamiro (2011). The low yield in saw dust might be due to lowest mycelium running rate which
+might be due to presence of different kinds of polyphenolic substances, low content of cellulose and low
+moisture holding capacity. Similar result was found by Chang & Quimio (1982) and (Gohl, 1993).
+CONCLUSION
+From the results obtained through our research banana leaves is more efficient for the production of Pleurotus
+florida mushroom in summer season as compared to rice straw, wheat straw, mixture of rice and wheat straw
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+238
+
+and saw dust as the total yield and B:C ratio both are higher in case of banana leaves than others. So, banana
+leaves could be one of the best substrate for production of Pleurotus florida mushroom in summer which will
+reduce the short supply of mushroom during summer condition and may also provides reasonable price to the
+farmers.
+ACKNOWLEDGMENTS
+
+We would like to express our cordial gratitude to our respected advisor Mr. Laxman Aryal, Scientist of
+NARC for his continuous guidance, advice and encouragement since the proposal preparation to report
+finalization. We are also very thankful to Department of Plant Pathology (GAASC) for providing inputs and
+library staff as well as other GAASC staff for their help and kind co-operation. We sincerely acknowledge
+various authors and publishers, to whom we have referred to in the text.
+REFERENCES
+
+Ahmed, S. A., Kadam, J. A., Mane, V. P., Patil, S. S., & Baig, M. M. V. (2009). Biologicalefficiency and
+nutritional contents of Pleurotus florida (Mont.) Singer cultivated on different agro-wastes. Nature and
+science, 7(1), 44-48.
+AMGA. (2004). The Australian Mushroom Growers Association (AMGA). Locked Bag 3, 2 Forbes St,
+Windsor, NSW Australia. pp.2756.
+Chang, S. T., & Quimio, T. H. (Eds.). (1982). Tropical mushrooms: biological nature and cultivation methods.
+Chinese University Press.
+Chukwurah, N. F., Eze, S. C., Chiejina, N. V., Onyeonagu, C. C., Okezie, C. E. A., Ugwuoke, K. I., ... &
+Nkwonta, C. G. (2013). Correlation of stipe length, pileus width and stipe girth of oyster mushroom
+(Pleurotus ostreatus) grown in different farm substrates. Journal of Agricultural Biotechnology and
+Sustainable Development, 5(3), 54.
+Gohl, G. (1993). Tropical Feeds. Published by Food and Agriculture Organization of United Nation. Revised
+by Andrew speedy computer journal version-4.
+Hasan, M. N., Rahman, M. S., Nigar, S., Bhuiyan, M. Z. A., & Ara, N. (2010). Performance of oyster
+mushroom (Pleurotus ostreatus) on different pretreated substrates. Int. J. Sustain. Crop Prod, 5(4), 1624.
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+239
+
+Mamiro, D. P., & Mamiro, P. S. (2011). Yield and mushroom size of Pleurotus ostreatus grown on rice straw
+basal substrate mixed and supplemented with various crop residues.
+Masarirambi, M. T., Mamba, M. B., & Earnshaw, D. M. (2011). Effects of Various Substrates on Growth and
+Yield of Oyster Mushroom (Pleurotus ostreatus). Asian Journal of Agricultural Sciences, 3(4), 275280.
+Mo. A. D. (2015/16). STATISTICAL INFORMATION ON NEPALESE AGRICULTURE 2015/16. Ministry
+of Agricultural Development, Kathmandu, Nepal.
+Mo. A. D. (2074). Krisi Diary 2074. Ministry of Agricultural Development, Kathmandu, Nepal.
+Mondal, S. R., Rehana, J., Noman, M. S., & Adhikary, S. K. (2010). Comparative study on growth and yield
+performance of oyster mushroom (Pleurotus florida) on different substrates. Journal of the Bangladesh
+Agricultural University, 8(2), 213-220.
+Poudel, S., & Bajracharya, A. (2011). Prospects and Challenges of Mushroom Cultivation in Nepal: A Case
+Study of Lakuri Bhanjyang, Lalitpur.
+R.P. Stanley. (2011). Enumerative combinatorics vol 49. Cambridge university press.
+Uddin, M. N., Yesmin, S., Khan, M. A., Tania, M., Moonmoon, M., & Ahmed, S. (2010). Production of oyster
+mushrooms in different seasonal conditions of Bangladesh. Journal of Scientific Research, 3(1), 161.
+
+AUTHORS
+First Author - Subhas Neupane, M. Sc. Agriculture, Department of Plant Pathology, Agriculture and Forestry
+University, Nepal. Email: logoon2subhas@gmail.com
+Second Author - Viwek Thakur, M. Sc. Agriculture, Department of Plant Pathology, Agriculture and Forestry
+University, Nepal. Email: thakurviwek2010@gmail.com
+Third Author - Bikram Bhatta, M. Sc. Agriculture, Department of Soil Science and Agri Engineering,
+Agriculture and Forestry University, Nepal. Email: agriculturistbhatta@gmail.com
+Fourth Author - Prakash Pathak, M. Sc. Agriculture, Department of Plant Breeding, Agriculture and Forestry
+University, Nepal. Email: loguntoprakash@gmail.com
+Fifth Author - Bhanu Bhakta Gautam, B. Sc. Agriculture, Institute of Agriculture and Animal Science,
+Goluleshwor College, Nepal. Email: logoonbhanu99@gmail.com
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+www.ijsrp.org
+
+International Journal of Scientific and Research Publications, Volume 8, Issue 6, June 2018
+ISSN 2250-3153
+
+240
+
+Sixth Author- Laxman Aryal, Scientist-S1, Plant Pathology, Nepal Agriculture Research Council, Nepal.
+Email: laxmanaryal.ag@gmail.com
+Corresponding Author - Subhas Neupane, M. Sc. Agriculture, Department of Plant Pathology, Agriculture
+and Forestry University, Nepal. Email: logoon2subhas@gmail.com OR laxmanaryal.ag@gmail.com
+Contact No: +977-9847181574
+
+http://dx.doi.org/10.29322/IJSRP.8.6.2018.p7832
+
+View publication stats
+
+www.ijsrp.org
+
+

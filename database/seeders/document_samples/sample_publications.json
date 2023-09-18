@@ -1,0 +1,104 @@
+[
+    {
+        "title":"Resource-Efficient Neural Networks for Embedded Systems",
+        "resources": [],
+        "download_resources":["2001.03048.pdf"],
+        "subject":"",
+        "tags":["Resource-efficient machine learning", "inference", "deep neural networks"],
+        "content":"01.txt",
+        "authors":[
+            {
+                "first_name": "Wolfgang",
+                "last_name": "Roth",
+                "email": "roth@tugraz.at",
+                "university": "Graz University of Technology, Austria",
+                "department": "Laboratory of Signal Processing and Speech Communication"
+            },
+            {
+                "first_name": "Günther",
+                "last_name": "Schindler",
+                "email": "guenther.schindler@ziti.uni-heidelberg.de",
+                "university": "Heidelberg University, Germany",
+                "department": "Institute of Computer Engineering"
+            },
+            {
+                "first_name": "Bernhard",
+                "last_name": "Klein",
+                "email": "bernhard.klein@ziti.uni-heidelberg.de",
+                "university": "Heidelberg University, Germany",
+                "department": "Institute of Computer Engineering"
+            },
+            {
+                "first_name": "Robert",
+                "last_name": "Peharz",
+                "email": "robert.peharz@tugraz.at",
+                "university": "Graz University of Technology, Austria",
+                "department": "Institute of Theoretical Computer Science"
+            },
+            {
+                "first_name": "Sebastian",
+                "last_name": "Tschiatschek",
+                "email": "sebastian.tschiatschek@univie.ac.at",
+                "university": "University of Vienna, Austria",
+                "department": "Faculty of Computer Science"
+            },
+            {
+                "first_name": "Holger",
+                "last_name": "Fröning",
+                "email": "holger.froening@ziti.uni-heidelberg.de",
+                "university": "Heidelberg University, Germany",
+                "department": "Institute of Computer Engineering"
+            },
+            {
+                "first_name": "Franz",
+                "last_name": "Pernkopf",
+                "email": "pernkopf@tugraz.at",
+                "university": "Graz University of Technology, Austria",
+                "department": "Laboratory of Signal Processing and Speech Communication"
+            },
+            {
+                "first_name": "Zoubin",
+                "last_name": "Ghahramani",
+                "email": "zoubin@eng.cam.ac.uk",
+                "university": "University of Cambridge, UK"
+            }
+        ]
+    },
+
+    {
+        "title":"Performance of Different Substrates on the Production of Oyster Mushroom (Pleurotus Florida) at Gokuleshwor, Darchula",
+        "resources": [],
+        "download_resources":["ijsrp-p7832.pdf"],
+        "subject":"Computer Science",
+        "tags":["Colonization", "Fruiting", "Mushroom", "Substrates and Yield" ],
+        "content":"02.txt",
+        "doi":"10.29322/IJSRP.8.6.2018.p7831",
+        "authors":[
+            {
+                "first_name":"Subhas",
+                "last_name":"Neupane"
+            },
+            {
+                "first_name":"Viwek",
+                "last_name":"Thakur"
+            },
+            {
+                "first_name":"Bikram",
+                "last_name":"Bhatta"
+            },
+            {
+                "first_name":"Praksah",
+                "last_name":"Pathak"
+            },
+            {
+                "first_name":"Bhanu",
+                "middle_name":"Bhakta",
+                "last_name":"Gautam"
+            },
+            {
+                "first_name":"Laxman",
+                "last_name":"Aryal"
+            }
+        ]
+    }
+]
